@@ -1,103 +1,214 @@
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHtml5,
+  faCss3Alt,
+  faJs,
+  faReact,
+  faDrupal,
+  faAws,
+  faNode,
+  faGit,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start bg-orange-600 p-4">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div className="font-sans min-h-screen flex items-center justify-center p-8 pb-20 sm:p-20">
+      <main className="content w-full max-w-[40rem] mx-auto flex flex-col items-start">
+        <div>
+          <div
+            id="imgWrapper"
+            className="flex flex-row-reverse items-center gap-6 justify-between w-full"
           >
+            <h1 className="text-4xl font-bold text-left w-full">
+              Hi, <br />
+              I'm Nico Haralambidis
+            </h1>
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              id="profilePic"
+              src="/nico.jpg"
+              alt="A picture of myself"
+              width={192}
+              height={192}
+              className="rounded-full border border-[#555]"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
+        </div>
+        <div className="textBox my-6 w-full flex flex-col gap-4">
+          <h3 className="font-bold text-2xl text-left">About Me</h3>
+          <p className="text-[#ccc] max-w-full">
+            I'm an aspiring professional who is looking for an opportunity to
+            grow and learn in the field of web development and IT.
+          </p>
+        </div>
+        <div className="textBox my-6 w-full flex flex-col gap-4">
+          <h3 className="font-bold text-2xl text-left">My Experience</h3>
+          <div className="jobText experienceBox flex gap-4">
+            <Image
+              className="jobPic rounded-full border border-[#ccc]"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMY7twX2WWr0f8zwB9u7L95SuI3wvogelPWw&s"
+              alt="Impact Studio logo"
+              width={44}
+              height={44}
+            />
+            <div className="innerWrapper">
+              <div>
+                <div className="sectionInfo flex justify-between items-center w-[70vw] max-w-[40rem]">
+                  <p className="text-white">Impact Studio</p>
+                  <p className="text-xs">Jun. 2023 - Jul. 2024</p>
+                </div>
+                <p className="sectionSubTitle text-[#ccc] text-sm">
+                  Web Developer Intern
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="jobText experienceBox flex gap-4">
+            <Image
+              className="jobPic rounded-full border border-[#ccc]"
+              src="https://corporate.target.com/getmedia/890f3192-ce35-496a-a3cf-15fc0a8105d0/Target_Bullseye-Logo_Red.jpg"
+              alt="Target logo"
+              width={44}
+              height={44}
+            />
+            <div className="innerWrapper">
+              <div>
+                <div className="sectionInfo flex justify-between items-center w-[70vw] max-w-[40rem]">
+                  <p className="text-white">Target</p>
+                  <p className="text-xs">Oct. 2018 - Oct. 2019</p>
+                </div>
+                <p className="sectionSubTitle text-[#ccc] text-sm">
+                  Electronics Team Member
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="textBox my-6 w-full flex flex-col gap-4">
+          <h3 className="font-bold text-2xl text-left">Education</h3>
+          <div className="jobText flex gap-4">
+            <Image
+              className="jobPic rounded-full border border-[#ccc]"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR46mLS9GRQNHBrkkCOi7yt_1G5XdXnQxV42Q&s"
+              alt="OSU logo"
+              width={44}
+              height={44}
+            />
+            <div className="innerWrapper">
+              <div>
+                <div className="sectionInfo flex justify-between items-center w-[70vw] max-w-[40rem]">
+                  <p className="text-white">Oregon State University</p>
+                  <p className="text-xs">Sep. 2020 - Jun. 2024</p>
+                </div>
+                <p className="sectionSubTitle text-[#ccc] text-sm">
+                  B.S. - Computer Science - 3.7 GPA
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="textBox my-6 w-full flex flex-col gap-4">
+          <h3 className="font-bold text-2xl text-left">Certifications</h3>
+          <div className="jobText flex gap-4">
+            <Image
+              className="jobPic rounded-full border border-[#ccc]"
+              src="https://pbs.twimg.com/profile_images/1677090954350583811/Xy93qVY4_400x400.jpg"
+              alt="IBM logo"
+              width={44}
+              height={44}
+            />
+            <div className="innerWrapper">
+              <div>
+                <div className="sectionInfo flex justify-between items-center w-[70vw] max-w-[40rem]">
+                  <p className="text-white">Full-Stack JavaScript Developer</p>
+                  <p className="text-xs">Issued Jul. 2025</p>
+                </div>
+                <p className="sectionSubTitle text-[#ccc] text-sm">IBM</p>
+              </div>
+            </div>
+          </div>
+          <div className="jobText flex gap-4">
+            <Image
+              className="jobPic rounded-full border border-[#ccc]"
+              src="https://rlv.zcache.com/linkedin_logo_social_media_modern_trendy_business_calling_card-r8c39eec016524c88bf1b98bed777f20f_tcvcc_644.webp"
+              alt="LinkedIn logo"
+              width={44}
+              height={44}
+            />
+            <div className="innerWrapper">
+              <div>
+                <div className="sectionInfo flex justify-between items-center w-[70vw] max-w-[40rem]">
+                  <p className="text-white">Creating a Responsive Web Design</p>
+                  <p className="text-xs">Issued Apr. 2024</p>
+                </div>
+                <p className="sectionSubTitle text-[#ccc] text-sm">LinkedIn</p>
+              </div>
+            </div>
+          </div>
+          <div className="jobText flex gap-4">
+            <Image
+              className="jobPic rounded-full border border-[#ccc]"
+              src="https://rlv.zcache.com/linkedin_logo_social_media_modern_trendy_business_calling_card-r8c39eec016524c88bf1b98bed777f20f_tcvcc_644.webp"
+              alt="LinkedIn logo"
+              width={44}
+              height={44}
+            />
+            <div className="innerWrapper">
+              <div>
+                <div className="sectionInfo flex justify-between items-center w-[70vw] max-w-[40rem]">
+                  <p className="text-white">Leading and Working in Teams</p>
+                  <p className="text-xs">Issued Jan. 2024</p>
+                </div>
+                <p className="sectionSubTitle text-[#ccc] text-sm">LinkedIn</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="techStack flex items-center justify-center gap-1 mt-8 mx-auto">
+          <p>Tech stack</p>
+          <span>|</span>
+          <FontAwesomeIcon
+            icon={faHtml5}
+            className="text-3xl"
+            style={{ color: "#e44d26" }}
+          />
+          <FontAwesomeIcon
+            icon={faCss3Alt}
+            className="text-3xl"
+            style={{ color: "#264de4" }}
+          />
+          <FontAwesomeIcon
+            icon={faJs}
+            className="text-3xl"
+            style={{ color: "#f7e018" }}
+          />
+          <FontAwesomeIcon
+            icon={faReact}
+            className="animate-spin text-3xl"
+            style={{ color: "#58c4dc", animationDuration: "20s" }}
+          />
+          <FontAwesomeIcon
+            icon={faDrupal}
+            className="text-3xl"
+            style={{ color: "#009cde" }}
+          />
+          <FontAwesomeIcon
+            icon={faAws}
+            className="text-3xl"
+            style={{ color: "#f90" }}
+          />
+          <FontAwesomeIcon
+            icon={faNode}
+            className="text-3xl px-2"
+            style={{ color: "#689f63" }}
+          />
+          <FontAwesomeIcon
+            icon={faGit}
+            className="text-3xl"
+            style={{ color: "#f05035" }}
+          />
         </div>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
