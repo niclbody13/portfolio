@@ -15,7 +15,7 @@ import {
 export default function Projects() {
   return (
     <section id="projects" className="w-full max-w-[80rem] mx-auto p-8 flex flex-col font-sans min-h-screen items-start justify-center">
-      <h1 className="text-3xl font-bold ml-16 mb-8 text-left">What I've been working on</h1>
+      <h1 className="text-3xl font-bold ml-16 mb-8 text-left">{"What I've been working on"}</h1>
       <div className="flex flex-wrap gap-8 w-full justify-center items-center">
         <ProjectCard
           title="Star Wars Database"

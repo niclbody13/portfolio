@@ -24,7 +24,7 @@ export default function HomeSection() {
           >
             <h1 className="text-4xl font-bold text-left w-full">
               Hi, <br />
-              I'm Nico Haralambidis
+              {`I'm Nico Haralambidis`}
             </h1>
             <Image
               id="profilePic"
@@ -39,8 +39,8 @@ export default function HomeSection() {
         <div className="textBox my-4 w-full flex flex-col gap-4">
           <h3 className="font-bold text-2xl text-left">About Me</h3>
           <p className="text-[#ccc] max-w-full">
-            I'm an aspiring professional who is looking for an opportunity to
-            grow and learn in the field of web development and IT.
+            {`I'm an aspiring professional who is looking for an opportunity to
+            grow and learn in the field of web development and IT.`}
           </p>
         </div>
         <div className="textBox my-4 w-full flex flex-col gap-4">
