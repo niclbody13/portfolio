@@ -6,7 +6,7 @@ export default function ContactSection() {
   return (
     <section id="contact" className="max-w-[80rem] font-sans mx-auto flex flex-col justify-center p-8">
       <h2 className="text-3xl font-bold ml-16 mb-6 text-left">Get in Touch</h2>
-      <div className="wrapper flex flex-row items-center justify-center gap-6">
+      <div className="wrapper flex flex-row items-center justify-center flex-wrap gap-6">
         <div>
           <a
             href="mailto:haralambidis.nico@gmail.com"

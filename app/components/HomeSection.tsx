@@ -22,7 +22,7 @@ export default function HomeSection() {
             id="imgWrapper"
             className="flex flex-row-reverse items-center gap-6 justify-between w-full mb-2"
           >
-            <h1 className="text-4xl font-bold text-left w-full">
+            <h1 className="text-2xl md:text-4xl sm:text-3xl font-bold text-left w-full">
               Hi, <br />
               {`I'm Nico Haralambidis`}
             </h1>
@@ -37,14 +37,14 @@ export default function HomeSection() {
           </div>
         </div>
         <div className="textBox my-4 w-full flex flex-col gap-4">
-          <h3 className="font-bold text-2xl text-left">About Me</h3>
+          <h3 className="font-bold text-xl sm:text-2xl text-left">About Me</h3>
           <p className="text-[#ccc] max-w-full">
             {`I'm an aspiring professional who is looking for an opportunity to
             grow and learn in the field of web development and IT.`}
           </p>
         </div>
         <div className="textBox my-4 w-full flex flex-col gap-4">
-          <h3 className="font-bold text-2xl text-left">My Experience</h3>
+          <h3 className="font-bold text-xl sm:text-2xl text-left">My Experience</h3>
           <InfoCard
             imgSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMY7twX2WWr0f8zwB9u7L95SuI3wvogelPWw&s"
             imgAlt="Impact Studio logo"
@@ -61,7 +61,7 @@ export default function HomeSection() {
           />
         </div>
         <div className="textBox my-4 w-full flex flex-col gap-4">
-          <h3 className="font-bold text-2xl text-left">Education</h3>
+          <h3 className="font-bold text-xl sm:text-2xl text-left">Education</h3>
           <InfoCard
             imgSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR46mLS9GRQNHBrkkCOi7yt_1G5XdXnQxV42Q&s"
             imgAlt="OSU logo"
@@ -71,7 +71,7 @@ export default function HomeSection() {
           />
         </div>
         <div className="textBox my-4 w-full flex flex-col gap-4">
-          <h3 className="font-bold text-2xl text-left">Certifications</h3>
+          <h3 className="font-bold text-xl sm:text-2xl text-left">Certifications</h3>
           <InfoCard
             imgSrc="https://pbs.twimg.com/profile_images/1677090954350583811/Xy93qVY4_400x400.jpg"
             imgAlt="IBM logo"
@@ -94,47 +94,47 @@ export default function HomeSection() {
             subtitle="LinkedIn"
           />
         </div>
-        <div className="techStack flex items-center justify-center mt-8 mx-auto">
-          <p>Tech stack</p>
-          <span className="mx-2">|</span>
+        <div className="techStack flex items-center justify-center mt-8 w-full">
+          <p className="text-center leading-none">Tech stack</p>
+          <span className="text-2xl mx-2">|</span>
           <FontAwesomeIcon
             icon={faHtml5}
-            className="text-3xl"
+            className="text-3xl px-1"
             style={{ color: "#e44d26" }}
           />
           <FontAwesomeIcon
             icon={faCss3Alt}
-            className="text-3xl"
+            className="text-3xl px-1"
             style={{ color: "#264de4" }}
           />
           <FontAwesomeIcon
             icon={faJs}
-            className="text-3xl"
+            className="text-3xl px-1"
             style={{ color: "#f7e018" }}
           />
           <FontAwesomeIcon
             icon={faReact}
-            className="animate-spin text-3xl"
+            className="animate-spin text-3xl px-1"
             style={{ color: "#58c4dc", animationDuration: "20s" }}
           />
           <FontAwesomeIcon
             icon={faDrupal}
-            className="text-3xl"
+            className="text-3xl px-1"
             style={{ color: "#009cde" }}
           />
           <FontAwesomeIcon
             icon={faAws}
-            className="text-3xl"
+            className="text-3xl px-1"
             style={{ color: "#f90" }}
           />
           <FontAwesomeIcon
             icon={faNode}
-            className="text-3xl pl-2 pr-1"
+            className="text-3xl px-1 pl-2"
             style={{ color: "#689f63" }}
           />
           <FontAwesomeIcon
             icon={faGit}
-            className="text-3xl"
+            className="text-3xl px-1"
             style={{ color: "#f05035" }}
           />
         </div>
